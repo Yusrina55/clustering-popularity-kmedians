@@ -27,7 +27,7 @@ print(jumlah_nilai)
 
 def clean_gross(Total_Gross):
 
-    if isinstance(Total_Gross):
+    if isinstance(Total_Gross, str):
         # Hapus dollar dan M, ubah ke float dengan dikali 1e6
         Total_Gross = Total_Gross.replace('$', '').replace('M', '')
         try:
